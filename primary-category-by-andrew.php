@@ -18,14 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-/**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
- */
-
 
  // eneueue js
  function enqueue_block_editor_assets() {
@@ -63,17 +55,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-/**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
- */
+
 function create_block_example_dynamic_block_init() {
 	register_block_type( __DIR__ . '/primary-category-posts/build' );
 }
 \add_action( 'init', __NAMESPACE__ . '\create_block_example_dynamic_block_init' );
+
 
 
 function register_primary_category_js() {
@@ -107,7 +94,7 @@ function ajx_handle_my_action() {
 
     //$args = json_decode( stripslashes( $_GET['query'] ), true );
 	$args = array(
-		'post_type' => 'post',  // Replace 'post' with your desired post type
+		'post_type' => 'post', 
 		'posts_per_page' => -1, // Number of posts to retrieve
 		'meta_query' => array(
 			array(

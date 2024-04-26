@@ -60,7 +60,6 @@ const CategorySelectPanel = () => {
 
         // Save the selected category to the database
         // Example: Update post meta data with the selected category
-        // Replace 'post_id' with the actual post ID
         wp.data.dispatch('core/editor').editPost({
             meta: {
                 'primary_category': primaryCategory,
