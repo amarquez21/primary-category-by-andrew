@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Primary Category by Andrew
- * Description:       Adds option to set primary categories for posts. Also includes block to display and filter posts by primary category on frontend
+ * Description:       Adds panel to sidebar to set primary category for posts. Also includes block to display and filter posts by primary category on frontend
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0

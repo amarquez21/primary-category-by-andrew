@@ -1,7 +1,7 @@
 {
 	"name": "primary-category-by-andrew",
 	"version": "0.1.0",
-	"description": "Adds option to set primary categories for posts. Also includes block to display and filter posts by primary category on frontend",
+	"description": "Adds panel to sidebar to set primary category for posts. Also includes block to display and filter posts by primary category on frontend",
 	"author": "Andrew",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
