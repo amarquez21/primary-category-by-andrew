@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/primary-category-posts",
+	"version": "0.1.0",
+	"title": "Primary Category Posts",
+	"category": "widgets",
+	"icon": "car",
+	"description": "Displays primary category posts",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "primary-category-posts",
+	"editorScript": "file:./index.js",
+
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js",
+	"script": ["primary_category_script"]
+}
